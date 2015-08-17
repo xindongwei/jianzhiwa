@@ -1,0 +1,5 @@
+platform :ios, '6.0'
+pod 'AFNetworking', '~> 2.3.1'
+pod 'MBProgressHUD', '~> 0.8'
+pod 'HPGrowingTextView', '~> 1.1'
+pod 'UIView+AutoLayout', '~> 2.0.1'

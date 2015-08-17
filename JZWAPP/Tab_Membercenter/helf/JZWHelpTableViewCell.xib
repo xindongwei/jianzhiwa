@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JZWHelpTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="易盟天地信心技术有限公司期待您的加入" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyO-jh-A0D">
+                        <rect key="frame" x="15" y="12" width="263" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_nomal" translatesAutoresizingMaskIntoConstraints="NO" id="oUh-7L-TSc">
+                        <rect key="frame" x="288" y="14" width="17" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="O2Q-2K-ygi"/>
+                            <constraint firstAttribute="width" constant="17" id="xRK-y0-CBe"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="oUh-7L-TSc" secondAttribute="centerY" id="JoI-tU-hpz"/>
+                    <constraint firstAttribute="trailing" secondItem="oUh-7L-TSc" secondAttribute="trailing" constant="15" id="MxZ-mI-iqK"/>
+                    <constraint firstItem="oUh-7L-TSc" firstAttribute="leading" secondItem="ZyO-jh-A0D" secondAttribute="trailing" constant="10" id="P33-FE-Rug"/>
+                    <constraint firstAttribute="centerY" secondItem="ZyO-jh-A0D" secondAttribute="centerY" id="hFB-AM-kDp"/>
+                    <constraint firstItem="ZyO-jh-A0D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="qC9-rZ-BpN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image" destination="oUh-7L-TSc" id="aN9-fp-TtL"/>
+                <outlet property="title" destination="ZyO-jh-A0D" id="5km-h3-PmK"/>
+            </connections>
+            <point key="canvasLocation" x="267" y="273"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_nomal" width="33" height="21"/>
+    </resources>
+</document>
